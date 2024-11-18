@@ -40,7 +40,7 @@ python manage.py runserver  8080(any open port)
 **Step 5: Access the Application**
 Open your browser and navigate to:
 Copy code
-http://127.0.0.1:8080  
+http://127.0.0.1:8080 (specified port in the above step) 
 Usage
 1.	Navigate to the homepage.
 2.	Upload a .docx or .pdf file.
@@ -51,6 +51,24 @@ o	Classify and summarize the document content.
 **Directory Structure**
 **AI-Document-Analyser/  
 ├── manage.py  
+├──.venv/
+|    ├── bin/ (Linux/Mac) or Scripts/ (Windows)
+|    │   ├── activate         # Activation script for Linux/Mac
+|    │   ├── activate.bat     # Activation script for Windows
+|    │   ├── activate.ps1     # Activation script for PowerShell
+|    │   ├── python           # Python executable (Linux/Mac)
+|    │   ├── pip              # pip executable (Linux/Mac)
+|    │   └── ...              # Other executables
+├── include/
+│   └── ...              # Header files for C extensions (usually empty)
+├── lib/ (Linux/Mac) or Lib/ (Windows)
+│   └── pythonX.Y/       # Python version-specific library files
+│       ├── site-packages/
+│       │   ├── ...      # Installed Python packages
+│       └── ...          # Other library files
+|
+|
+├── pyvenv.cfg           # Configuration file for the virtual environment
 ├── project/                # Main Django project directory  
 │   ├── settings.py         # Django settings  
 │   ├── urls.py             # URL configurations  
